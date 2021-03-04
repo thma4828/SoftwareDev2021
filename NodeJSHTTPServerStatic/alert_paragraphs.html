@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Sample Page</title>
+  </head>
+  <body>
+    <p>Paragraph 1</p>
+    <div>
+      <p>Paragraph inside a div.</p>
+    </div>
+    <button>Click me!</button>
+    <button>Click me instead!</button>
+    <script>
+      document.getElementsByTagName('button')[0].addEventListener('click', () => {
+        const allParagraphs = document.getElementsByTagName('p');
+        let allContent = "";
+        let count = 0;
+
+        for(let i=0; i < allParagraphs.length; i++){
+            count++;
+            const node = allParagraphs[i];
+            allContent += `${count} - ${node.textContent}\n`;
+        }
+        alert(`Found ${count} paragraphs. content was:\n ${allContent}\n`);document.getElementsByTagName('p')[0].textContent = 'Found Paragraphs';
+        document.getElementsByTagName('p')[0].textContent = 'Found Paragraphs';
+      });
+      document.getElementsByTagName('button')[1].addEventListener('click', () => {
+        const allParagraphs = document.getElementsByTagName('p');
+        let allContent = "";
+
+        for(let j=0; j<allParagraphs.length; j++){
+          const node = allParagraphs[j]
+          var n_string = node.textContent.toUpperCase();
+          allContent += `${n_string}\n`;
+        }
+
+        document.getElementsByTagName('p')[0].textContent = allContent;
+      });
+    </script>
+  </body>
+</html>

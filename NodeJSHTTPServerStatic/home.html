@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>FlixBase - An interactive movie database.</title>
+      <meta charset="windows-1252">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <style>
+          body {background-color: blue}
+          h1 {background: #ccc;
+              color: #003366;}
+          #textdiv1 {background-color: red}
+          #t1 {background-color: pink}
+      </style>
+  </head>
+  <body>
+      <div id="top bar container">
+          <div id="bar one">
+                <h1 class='headerbars'>FLIX BASE</h1>
+                <div id="textdiv1" class="inner_div">
+                    <form action='http://127.0.0.1:8080/f1' id='lookup1' class='q' method='GET'>
+                    <label for="table">Choose search method: </label>
+                    <select name="table" id="t1">
+                        <option value="actor">Actor</option>
+                        <option value="title">Title</option>
+                        <option value="mpaa">MPAA Rating</option>
+                        <option value="adv">Advanced (combine options)</option>
+                    </select>
+                    <input type="submit" id="Submit" value="Submit" class="submit">
+                    </form>
+                </div>
+          </div>
+      </div>
+
+      <script>
+      </script>
+  </body>
+</html>

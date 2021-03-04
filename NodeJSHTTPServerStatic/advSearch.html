@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>FlixBase - An interactive movie database.</title>
+      <meta charset="windows-1252">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <style>
+          body {background-color: blue}
+          h1 {background: #ccc;
+              color: #003366;}
+          #textdiv2{background: #ccc}
+          #t1 {background-color: pink}
+          #as {background-color: pink}
+      </style>
+  </head>
+
+  <body>
+      <div id="top bar container">
+          <div id="bar one">
+                <h1 class='headerbars'>FLIX BASE</h1>
+          </div>
+          <div id="bar two">
+                <h3 class='headerbars' id='as'> ADVANCED SEARCH </h3>
+                <div id="textdiv2" class="inner_div">
+                    <form action='http://127.0.0.1:8080/advs' id="lookup2" class='q' method='GET'>
+                      <label for="table2">Rating between: </label>
+                      <select name="table2" id="t2">
+                        <option value="g">G</option>
+                        <option value="pg">PG</option>
+                        <option value="pg13">PG-13</option>
+                        <option value="r">R</option>
+                      </select>
+                      <label for="table3">And: </label>
+                      <select name="table3" id="t3">
+                        <option value="g">G</option>
+                        <option value="pg">PG</option>
+                        <option value="pg13">PG-13</option>
+                        <option value="r">R</option>
+                      </select>
+                      <label for="table4"> Length in minutes: </label>
+                      <select name="table4" id="t4">
+                       <option value="r1">140+</option>
+                       <option value="r2">100-139</option>
+                       <option value="r3">60-99</option>
+                       <option value="r4">0-59</option>
+                      <input type="submit" id="Submit2" value="Submit" class="submit">
+                    </form>
+                </div>
+          </div>
+      </div>
+  </body>
+
+</html>
